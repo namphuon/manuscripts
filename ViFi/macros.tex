@@ -1,0 +1,102 @@
+\usepackage{hyperref}
+\usepackage{units}
+%\usepackage[small, bf]{caption}
+%\usepackage[numbers]{natbib}
+\usepackage[super,comma]{natbib}
+\usepackage{color}
+\usepackage{amssymb, amsmath}
+%\usepackage{epstopdf}
+%\usepackage{ulem}
+\usepackage{verbatim}
+\usepackage{amsfonts}
+%\usepackage{subfloat}
+\usepackage{subfig}
+%\usepackage{multirow}
+\usepackage{authblk}
+%\usepackage{array}
+%\usepackage{footmisc}
+%\usepackage{tabularx}
+%\usepackage{sidecap}
+\usepackage{setspace}
+\usepackage{graphicx}
+%\usepackage{caption}
+%\usepackage{subcaption}
+\usepackage[normalem]{ulem}
+\usepackage[margin=1in]{geometry}
+\usepackage[usenames,dvipsnames,table,xcdraw]{xcolor}
+%\usepackage{rotating}
+\renewcommand\Affilfont{\small}
+\newcommand{\ignore}[1]{}
+\graphicspath{{figures/}}
+
+\newcommand{\doubleline}[2][c]{%
+	\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+
+
+\newenvironment{packed_enum}{
+\begin{enumerate}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{enumerate}}
+\newenvironment{packed_itemize}{
+\begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{itemize}}
+\newenvironment{packed_desc}{
+\begin{description}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}
+}{\end{description}}
+
+%%\def\glenn#1{{\textcolor{red}{GT note: #1}}}
+\def\VB#1{{\textcolor{blue}{VB note: #1}}}
+\def\SM#1{{\textcolor{orange}{SM note: #1}}}
+\def\ali#1{{\textcolor{JungleGreen}{Ali note: #1}}}
+
+\def\figfmt{png}
+\def\figsuffix{_reduced_size}
+%\def\figsuffix{}
+\def\MDDAF{\text{MDDAF}}
+\def\DAF{\text{DAF}}
+
+\def\dHAF{\text{-HAF}}
+\def\HAF{\text{HAF}}
+\def\HAFpeak{\text{HAF-peak}}
+\def\HAFtrough{\text{HAF-trough}}
+\def\HAFneutral{\text{HAF}_{\text{neutral}}}
+\def\TMRCA{T_{\text{MRCA}}}
+
+\def\all{\,\text{all}}
+\def\car{\,\text{car}}
+\def\ncar{\,\text{non}}
+
+\def\MRCAall{\text{MRCA}^{\text{all}}}
+\def\MRCAcar{\text{MRCA}^{\text{car}}}
+\def\MRCAnon{\text{MRCA}^{\text{non}}}
+
+\def\AlleleFreq{\text{AlleleFreq}}
+\def\AlleleFreqNeutral{\text{AlleleFreq}_{\text{neutral}}}
+
+\def\SAFE{\text{SAFE}}
+\def\iSAFE{\text{iSAFE}}
+
+\def\vecbold#1{{\bf#1}}
+\def\mathbi#1{\textbf{\em #1}}
+
+%\doublespacing % 2 line spacing
+\onehalfspacing % 1.5 line spacing
+
+\newcommand{\algoname}{\ensuremath{\text{PreCIOSS}}}
+
+
+%%%%%%%%%%%%
+\makeatletter
